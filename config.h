@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code Nerd Font Mono:pixelsize=24:antialias=true:autohint=true";
+// static char *font = "Fira Code Nerd Font Mono:pixelsize=18:antialias=true:autohint=true";
+static char *font = "Noto Sans Mono CJK SC:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -16,10 +17,11 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/zsh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
+
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
 /* identification sequence returned in DA and DECID */
@@ -224,8 +226,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
-	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ Mod1Mask,             XK_b,           kscrollup,      {.i = -1} },
+	{ Mod1Mask,             XK_f,           kscrolldown,    {.i = -1} },
 };
 
 /*
