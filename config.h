@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-// static char *font = "Fira Code Nerd Font Mono:pixelsize=18:antialias=true:autohint=true";
-static char *font = "Noto Sans Mono CJK SC:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Fira Code Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
+// static char *font = "Noto Sans Mono CJK SC:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
